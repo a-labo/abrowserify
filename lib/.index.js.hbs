@@ -5,12 +5,12 @@
 
 'use strict'
 
-const ababel = require('./ababel')
+const abrowserify = require('./abrowserify')
 
-let lib = ababel.bind(this)
+let lib = abrowserify.bind(this)
 
-Object.assign(lib, ababel, {
-  ababel
+Object.assign(lib, abrowserify, {
+  abrowserify
 })
 
 module.exports = lib
