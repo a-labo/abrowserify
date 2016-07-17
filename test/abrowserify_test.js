@@ -20,7 +20,11 @@ describe('abrowserify', function () {
   }))
 
   it('Abrowserify', () => co(function * () {
-
+    yield abrowserify(
+      `${__dirname}/../misc/mocks/mock-main.js`,
+      `${__dirname}/../tmp/testing-bundling/testing-bundle.js`,
+      { debug: true }
+    )
   }))
 })
 

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/a-labo/abrowserify#readme",
   "dependencies": {
+    "asfs": "^1.0.5",
     "browserify": "^13.0.1",
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
