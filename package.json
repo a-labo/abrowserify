@@ -1,6 +1,6 @@
 {
   "name": "abrowserify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browserify wrapper to speed up compiling by caching results.",
   "main": "lib",
   "scripts": {
