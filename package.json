@@ -1,14 +1,16 @@
 {
   "name": "abrowserify",
-  "version": "1.0.4",
-  "description": "Browserify wrapper to speed up compiling by caching results.",
+  "version": "1.0.5",
+  "description": "Bundle with browserify only when file changed from last time",
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js",
     "prepublish": "./ci/build.js"
   },
   "repository": "a-labo/abrowserify",
-  "keywords": [],
+  "keywords": [
+    "browserify"
+  ],
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishitaka.com@gmail.com",
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/a-labo/abrowserify#readme",
   "dependencies": {
+    "akv": "^1.0.14",
     "asfs": "^1.0.5",
     "browserify": "^13.0.1",
     "browserify-incremental": "^3.1.1",
@@ -35,7 +38,7 @@
     "ape-testing": "^4.0.1",
     "ape-tmpl": "^5.0.13",
     "ape-updating": "^4.0.4",
-    "coz": "^6.0.6",
+    "coz": "^6.0.11",
     "injectmock": "^2.0.0"
   },
   "engines": {
