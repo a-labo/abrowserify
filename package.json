@@ -1,6 +1,6 @@
 {
   "name": "abrowserify",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Bundle with browserify only when file changed from last time",
   "main": "lib",
   "scripts": {
