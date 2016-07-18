@@ -1,6 +1,6 @@
 {
   "name": "abrowserify",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Bundle with browserify only when file changed from last time",
   "main": "lib",
   "scripts": {
@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/a-labo/abrowserify#readme",
   "dependencies": {
-    "akv": "^1.0.14",
+    "akv": "^1.0.16",
+    "akv-status": "^1.0.2",
     "asfs": "^1.0.5",
     "browserify": "^13.0.1",
     "browserify-incremental": "^3.1.1",
@@ -34,7 +35,7 @@
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.2",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.3",
+    "ape-tasking": "^4.0.7",
     "ape-testing": "^4.0.1",
     "ape-tmpl": "^5.0.13",
     "ape-updating": "^4.0.4",
