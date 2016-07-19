@@ -1,6 +1,6 @@
 {
   "name": "abrowserify",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Bundle with browserify only when file changed from last time",
   "main": "lib",
   "scripts": {
@@ -22,8 +22,9 @@
   },
   "homepage": "https://github.com/a-labo/abrowserify#readme",
   "dependencies": {
+    "aglob": "^1.0.1",
     "akv": "^1.0.16",
-    "akv-status": "^1.0.2",
+    "akv-status": "^1.0.5",
     "asfs": "^1.0.5",
     "browserify": "^13.0.1",
     "browserify-incremental": "^3.1.1",
