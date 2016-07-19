@@ -97,7 +97,7 @@ co(function * () {
 Signature
 ---------
 
-`.abrowserify(src, dest, options) -> Promise`
+`abrowserify(src, dest, options) -> Promise`
 
 ### Params
 
