@@ -90,6 +90,30 @@ co(function * () {
 
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
+<!-- Section from "doc/guides/03.Signature.md.hbs" Start -->
+
+<a name="section-doc-guides-03-signature-md"></a>
+
+Signature
+---------
+
+`.abrowserify(src, dest, options) -> Promise`
+
+### Params
+
+| Name | Type | Description |
+| ----- | --- | -------- |
+| src | string | Source file name |
+| dest | string | Detination file name |
+| options | Object | Optional settings |
+| options.status | string | Status file path |
+| options.reflects | string[] | File patterns to reflects changes |
+| options.reflects | string[] | File patterns to reflects changes |
+
+
+
+<!-- Section from "doc/guides/03.Signature.md.hbs" End -->
+
 
 <!-- Sections Start -->
 
