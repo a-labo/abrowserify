@@ -107,7 +107,7 @@ Signature
 | dest | string | Destination file name |
 | options | Object | Optional settings |
 | options.status | string | Status file path |
-| options.reflects | string[] | File patterns to reflects changes |
+| options.cache | string | Cache file path |
 | options.reflects | string[] | File patterns to reflects changes |
 
 
