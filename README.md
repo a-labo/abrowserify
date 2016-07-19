@@ -104,7 +104,7 @@ Signature
 | Name | Type | Description |
 | ----- | --- | -------- |
 | src | string | Source file name |
-| dest | string | Detination file name |
+| dest | string | Destination file name |
 | options | Object | Optional settings |
 | options.status | string | Status file path |
 | options.reflects | string[] | File patterns to reflects changes |
