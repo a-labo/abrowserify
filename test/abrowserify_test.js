@@ -23,7 +23,12 @@ describe('abrowserify', function () {
     yield abrowserify(
       `${__dirname}/../misc/mocks/mock-main.js`,
       `${__dirname}/../tmp/testing-bundling/testing-bundle.js`,
-      { debug: true }
+      {
+        debug: true,
+        transforms: [
+          [ 'babelify', { presets: [ 'es2015', 'react' ] } ]
+        ]
+      }
     )
   }))
 })

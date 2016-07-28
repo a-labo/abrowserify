@@ -40,6 +40,7 @@
     "ape-tasking": "^4.0.7",
     "ape-tmpl": "^5.0.13",
     "ape-updating": "^4.0.4",
+    "babelify": "^7.3.0",
     "coz": "^6.0.11",
     "injectmock": "^2.0.0"
   },
