@@ -26,7 +26,7 @@ describe('abrowserify', function () {
       {
         debug: true,
         transforms: [
-          [ 'babelify', { presets: [ 'es2015', 'react' ] } ]
+          [ 'babelify', { presets: [ 'es2015' ] } ]
         ]
       }
     )
