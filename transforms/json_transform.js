@@ -25,6 +25,24 @@ function jsonTransform (filename, optinos = {}) {
     function doFlush (callback) {
       const s = this
       let content = require(filename)
+
+      function warnFunction (content) {
+        switch (typeof content) {
+          case 'function':
+            console.warn(`[json-transform][${filename}] A function detected. You should not include one for json transform.`)
+            break
+          case 'object':
+            for (let name of Object.keys(content)) {
+              warnFunction(content[ name ])
+            }
+            break
+          default:
+            break
+        }
+      }
+
+      warnFunction(content)
+
       s.push(`'use strict';module.exports = ${JSON.stringify(content)};`)
       callback()
     }
