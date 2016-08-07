@@ -26,7 +26,8 @@ describe('abrowserify', function () {
       {
         debug: true,
         transforms: [
-          [ 'babelify', { presets: [ 'es2015' ] } ]
+          [ 'babelify', { presets: [ 'es2015' ], babelrc: false } ],
+          [ require('../transforms/json_transform'), { pattern: '**/*-setting.js' } ]
         ]
       }
     )
