@@ -20,15 +20,32 @@ describe('abrowserify', function () {
   }))
 
   it('Abrowserify', () => co(function * () {
+    let main = `${__dirname}/../misc/mocks/mock-main.js`
+    let bundle = `${__dirname}/../tmp/testing-bundling/testing-bundle.js`
+    let external = `${__dirname}/../tmp/testing-bundling/testing-external.js`
+    let transforms = [
+      [ 'babelify', { presets: [ 'es2015' ], babelrc: false } ],
+      [ require('../transforms/json_transform'), { pattern: '**/*-setting.js' } ]
+    ]
     yield abrowserify(
-      `${__dirname}/../misc/mocks/mock-main.js`,
-      `${__dirname}/../tmp/testing-bundling/testing-bundle.js`,
+      main,
+      bundle,
       {
         debug: true,
-        transforms: [
-          [ 'babelify', { presets: [ 'es2015' ], babelrc: false } ],
-          [ require('../transforms/json_transform'), { pattern: '**/*-setting.js' } ]
+        transforms: transforms,
+        externals: [
+          require.resolve('../misc/mocks/mock-sub2'),
+          'asenv'
         ]
+      }
+    )
+    yield abrowserify(
+      null,
+      external,
+      {
+        debug: true,
+        transforms: transforms,
+        require: [ require.resolve('../misc/mocks/mock-sub2') ]
       }
     )
   }))
