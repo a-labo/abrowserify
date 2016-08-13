@@ -36,7 +36,7 @@
     "through2": "^2.0.1"
   },
   "devDependencies": {
-    "amocha": "^1.0.13",
+    "amocha": "^1.0.14",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
