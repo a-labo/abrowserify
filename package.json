@@ -23,11 +23,11 @@
   "homepage": "https://github.com/a-labo/abrowserify#readme",
   "dependencies": {
     "aglob": "^1.0.2",
-    "akv": "^1.0.20",
+    "akv": "^1.0.21",
     "akv-status": "^1.0.5",
     "asenv": "^1.0.6",
     "asfs": "^1.0.5",
-    "asobj": "^1.0.2",
+    "asobj": "^1.1.0",
     "browserify": "^13.1.0",
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
