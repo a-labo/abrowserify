@@ -1,11 +1,11 @@
 {
   "name": "abrowserify",
-  "version": "1.1.9",
+  "version": "2.0.0",
   "description": "Bundle with browserify only when file changed from last time",
   "main": "lib",
   "scripts": {
-    "test": "./ci/test.js",
-    "prepublish": "./ci/build.js"
+    "test": "node ./ci/test.js",
+    "prepare": "node ./ci/build.js"
   },
   "repository": "a-labo/abrowserify",
   "keywords": [
@@ -22,34 +22,33 @@
   },
   "homepage": "https://github.com/a-labo/abrowserify#readme",
   "dependencies": {
-    "aglob": "^1.0.2",
+    "aglob": "^2.0.1",
     "akv": "^1.0.21",
     "akv-status": "^1.0.5",
     "asenv": "^1.0.6",
-    "asfs": "^1.0.5",
-    "asobj": "^1.1.0",
-    "browserify": "^13.1.0",
+    "asfs": "^1.2.2",
+    "asobj": "^1.5.0",
+    "browserify": "^14.0.0",
     "browserify-incremental": "^3.1.1",
     "co": "^4.6.0",
     "minimatch": "^3.0.3",
-    "through2": "^2.0.1"
+    "through2": "^2.0.3"
   },
   "devDependencies": {
-    "amocha": "^1.0.14",
+    "amocha": "^1.0.16",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
-    "ape-reporting": "^3.0.2",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^5.0.15",
+    "ape-tmpl": "^5.0.20",
     "ape-updating": "^4.0.5",
-    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-es2015": "^6.22.0",
     "babelify": "^7.3.0",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=6",
-    "npm": ">=3"
+    "npm": ">=4"
   }
 }
