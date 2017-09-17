@@ -6,20 +6,19 @@
 
 const abrowserify = require('../lib/abrowserify.js')
 const assert = require('assert')
-const co = require('co')
 
 describe('abrowserify', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Abrowserify', () => co(function * () {
+  it('Abrowserify', async () => {
     let main = `${__dirname}/../misc/mocks/mock-main.js`
     let bundle = `${__dirname}/../tmp/testing-bundling/testing-bundle.js`
     let external = `${__dirname}/../tmp/testing-bundling/testing-external.js`
@@ -27,7 +26,7 @@ describe('abrowserify', function () {
       [ 'babelify', { presets: [ 'es2015' ], babelrc: false } ],
       [ require('../transforms/json_transform'), { pattern: '**/*-setting.js' } ]
     ]
-    yield abrowserify(
+    await abrowserify(
       main,
       bundle,
       {
@@ -39,7 +38,7 @@ describe('abrowserify', function () {
         ]
       }
     )
-    yield abrowserify(
+    await abrowserify(
       null,
       external,
       {
@@ -48,7 +47,7 @@ describe('abrowserify', function () {
         require: [ require.resolve('../misc/mocks/mock-sub2') ]
       }
     )
-  }))
+  })
 })
 
 /* global describe, before, after, it */
