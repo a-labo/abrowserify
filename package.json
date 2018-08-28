@@ -1,6 +1,6 @@
 {
   "name": "abrowserify",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Bundle with browserify only when file changed from last time",
   "main": "lib",
   "scripts": {
@@ -39,7 +39,7 @@
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^6.0.10",
+    "ape-tmpl": "^6.0.11",
     "ape-updating": "^5.0.1",
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.22.0",
